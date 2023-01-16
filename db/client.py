@@ -9,7 +9,7 @@ MONGO_DB_NAME = os.getenv('MONGO_DB_NAME')
 #db_client = MongoClient(os.getenv('MONGO_URI'), serverSelectionTimeoutMS=5000).MONGO_DB_NAME
 try:
     db_client = pymongo.MongoClient(
-        os.getenv('MONGO_DB_URI'), 
+        os.getenv('MONGO_URL'), 
         serverSelectionTimeoutMS=5000).pythondb
     print("INFO:\t  Mongo DB konektatua OK.....")
 except Exception:
