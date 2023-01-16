@@ -8,7 +8,7 @@ from db.client import db_client
 
 router = APIRouter(prefix="/usersdb",
                    tags=["UsersDB"],
-                   responses={status.HTTP_404_NOT_FOUND: {"message": "No encotrado!"}})
+                   responses={status.HTTP_404_NOT_FOUND: {"message": "No encontrado!"}})
 
 users_list = []
 
