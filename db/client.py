@@ -11,6 +11,7 @@ try:
     db_client = pymongo.MongoClient(
         os.getenv('URI_MONGO'), 
         serverSelectionTimeoutMS=5000).pythondb
+    print(os.getenv('URI_MONGO'))
     print("INFO:\t  Mongo DB konektatua OK.....")
 except Exception:
     print("BAD NEWS:\t Unable to connect to the server.")
